@@ -53,8 +53,8 @@ export default function Contact() {
               <p>Hyderabad, India</p>
               <p><strong>Ganesh Chitta</strong><br />Proprietor</p>
               <p>
-                <a href="mailto:info@sequoiaenterprises.in">info@sequoiaenterprises.in</a><br />
-                <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a>
+                <a href="mailto:ganesh@sequoiaie.com">ganesh@sequoiaie.com</a><br />
+                <a href="tel:+918367736999">+91 83677 36999</a>
               </p>
             </div>
             <div className="contact-form-wrap">

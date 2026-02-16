@@ -22,8 +22,8 @@ export default function Footer() {
         <div className="footer-export__contact">
           <h3>Contact</h3>
           <p><HiOutlineLocationMarker /> Hyderabad, India</p>
-          <p><HiOutlinePhone /> <a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></p>
-          <p><HiOutlineMail /> <a href="mailto:info@sequoiaenterprises.in">info@sequoiaenterprises.in</a></p>
+          <p><HiOutlinePhone /> <a href="tel:+918367736999">+91 83677 36999</a></p>
+          <p><HiOutlineMail /> <a href="mailto:ganesh@sequoiaie.com">ganesh@sequoiaie.com</a></p>
         </div>
       </div>
       <div className="footer-export__bottom">

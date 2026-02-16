@@ -1,0 +1,27 @@
+{
+	"name": "app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\"",
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"browser": {
+		"fs": false,
+		"path": false,
+		"os": false
+	},
+	"dependencies": {
+		"@sendgrid/mail": "^8.1.4",
+		"dotenv": "^16.4.7",
+		"next": "^16.1.6",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-icons": "^5.4.0"
+	},
+	"devDependencies": {
+		"sass": "^1.83.4"
+	}
+}

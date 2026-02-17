@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineLocationMarker, HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 
@@ -7,9 +6,6 @@ export default function Footer() {
     <footer className="footer-export">
       <div className="footer-export__content">
         <div className="footer-export__brand">
-          <Link href="/" className="footer-export__logo">
-            <Image src="/img/sequoia-logo.jpeg" alt="Sequoia Enterprises" width={140} height={32} />
-          </Link>
           <p className="footer-export__tagline">Global Exporters of Organic & Premium Food Products from India to the World.</p>
         </div>
         <div className="footer-export__links">

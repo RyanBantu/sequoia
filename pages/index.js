@@ -23,7 +23,7 @@ export default function Home() {
             Premium Organic & Conventional Food Products from India.
           </p>
           <div className="hero__cta">
-            <Link href="/contact" className="btn btn--primary">Get a Quote</Link>
+            <Link href="/contact" className="btn btn--turmeric">Get a Quote</Link>
             <Link href="/products" className="btn btn--outline">Our Products</Link>
           </div>
         </div>
@@ -38,34 +38,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section--blue">
+      <section className="section section--blue core-product">
         <div className="container">
-          <h2 className="section__title section__title--light">Our Core Products</h2>
-          <div className="product-grid">
-            <div className="product-card">
-              <span className="product-card__icon">Organic</span>
-              <h3>Organic Products</h3>
+          <h2 className="section__title section__title--light">Our Core Product</h2>
+          <div className="core-product__wrap">
+            <div className="core-product__image-wrap">
+              <img
+                src="/img/turmeric-core.jpeg"
+                alt="Turmeric powder and root from Eastern Ghats - naturally grown and sourced"
+                className="core-product__image"
+                width={600}
+                height={400}
+              />
+              <p className="core-product__caption">
+                Naturally grown and sourced from the hills — Eastern Ghats
+              </p>
             </div>
-            <div className="product-card">
-              <span className="product-card__icon">Spices</span>
-              <h3>Spices & Herbs</h3>
+            <div className="product-grid product-grid--feature">
+              <Link href="/products" className="product-card product-card--main">
+                <span className="product-card__icon">Turmeric</span>
+                <h3>Turmeric Powder</h3>
+                <p className="product-card__desc">Premium-grade, internationally certified</p>
+              </Link>
+              <div className="product-card">
+                <span className="product-card__icon">More</span>
+                <h3>Expanding portfolio</h3>
+                <p className="product-card__desc">Organic & natural products</p>
+              </div>
             </div>
-            <div className="product-card">
-              <span className="product-card__icon">Tea</span>
-              <h3>Tea & Coffee</h3>
-            </div>
-            <div className="product-card">
-              <span className="product-card__icon">Rice</span>
-              <h3>Rice & Grains</h3>
-            </div>
-            <div className="product-card">
-              <span className="product-card__icon">Nuts</span>
-              <h3>Nuts & Dry Fruits</h3>
-            </div>
-            <div className="product-card">
-              <span className="product-card__icon">Agro</span>
-              <h3>Processed & Agro Products</h3>
-            </div>
+          </div>
+          <div className="text-center" style={{ marginTop: "1.5rem" }}>
+            <Link href="/products" className="btn btn--light">View all products</Link>
           </div>
         </div>
       </section>

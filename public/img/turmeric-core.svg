@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="hills" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d5016"/>
+      <stop offset="50%" style="stop-color:#3d6b1e"/>
+      <stop offset="100%" style="stop-color:#5a8c2e"/>
+    </linearGradient>
+    <linearGradient id="powder" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a84b"/>
+      <stop offset="100%" style="stop-color:#e8c25a"/>
+    </linearGradient>
+    <linearGradient id="surface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b6914"/>
+      <stop offset="100%" style="stop-color:#6b4f0f"/>
+    </linearGradient>
+  </defs>
+  <!-- Hills background -->
+  <path d="M0 400 L0 280 Q150 220 300 260 Q450 200 600 250 L600 400 Z" fill="url(#hills)" opacity="0.9"/>
+  <path d="M0 400 L0 320 Q200 260 400 300 Q550 250 600 280 L600 400 Z" fill="url(#hills)" opacity="0.7"/>
+  <!-- Rocky surface -->
+  <ellipse cx="300" cy="320" rx="220" ry="50" fill="url(#surface)"/>
+  <!-- Turmeric powder pile -->
+  <ellipse cx="300" cy="300" rx="120" ry="45" fill="url(#powder)"/>
+  <!-- Bowl shape -->
+  <path d="M220 280 L380 280 L360 320 L240 320 Z" fill="#5c4033" stroke="#4a3528" stroke-width="2"/>
+  <ellipse cx="300" cy="280" rx="80" ry="25" fill="url(#powder)"/>
+  <!-- Root slices -->
+  <circle cx="180" cy="310" r="22" fill="#c9a227" stroke="#a68520" stroke-width="1"/>
+  <circle cx="420" cy="305" r="18" fill="#c9a227" stroke="#a68520" stroke-width="1"/>
+  <circle cx="250" cy="330" r="15" fill="#d4a84b" stroke="#a68520" stroke-width="1"/>
+  <!-- Caption area -->
+  <rect x="0" y="340" width="600" height="60" fill="rgba(0,0,0,0.6)"/>
+  <text x="300" y="372" text-anchor="middle" fill="white" font-family="Georgia, serif" font-size="14" font-weight="500">Naturally grown and sourced from the hills  Eastern Ghats</text>
+</svg>

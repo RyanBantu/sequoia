@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { FaLinkedin } from "react-icons/fa";
 
-const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/ganeshchitta";
+const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/ganesh-chitta-64348664/";
 
 export default function About() {
   return (

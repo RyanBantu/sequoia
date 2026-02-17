@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="nav-export__bar">
         <Link href="/" className="nav-export__logo">
           <Image
-            src="/sequoia-logo.svg"
+            src="/img/sequoia-logo.jpeg"
             alt="Sequoia Enterprises"
             width={180}
             height={40}

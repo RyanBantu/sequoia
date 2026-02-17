@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-export__content">
         <div className="footer-export__brand">
           <Link href="/" className="footer-export__logo">
-            <Image src="/sequoia-logo.svg" alt="Sequoia" width={140} height={32} />
+            <Image src="/img/sequoia-logo.jpeg" alt="Sequoia Enterprises" width={140} height={32} />
           </Link>
           <p className="footer-export__tagline">Global Exporters of Organic & Premium Food Products from India to the World.</p>
         </div>

@@ -23,7 +23,6 @@ export default function Home() {
             Premium Organic & Conventional Food Products from India.
           </p>
           <div className="hero__cta">
-            <Link href="/contact" className="btn btn--turmeric">Get a Quote</Link>
             <Link href="/products" className="btn btn--outline">Our Products</Link>
           </div>
         </div>

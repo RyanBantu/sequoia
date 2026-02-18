@@ -22,7 +22,6 @@ export default function Navbar() {
           <Link href="/about" className="nav-export__link">About</Link>
           <Link href="/products" className="nav-export__link">Products</Link>
           <Link href="/contact" className="nav-export__link">Contact</Link>
-          <Link href="/contact" className="nav-export__link nav-export__link--cta">Get a Quote</Link>
         </nav>
         <button
           type="button"
@@ -41,7 +40,6 @@ export default function Navbar() {
           <Link href="/about" className="nav-export__mobile-link" onClick={() => setOpen(false)}>About</Link>
           <Link href="/products" className="nav-export__mobile-link" onClick={() => setOpen(false)}>Products</Link>
           <Link href="/contact" className="nav-export__mobile-link" onClick={() => setOpen(false)}>Contact</Link>
-          <Link href="/contact" className="nav-export__mobile-link nav-export__mobile-link--cta" onClick={() => setOpen(false)}>Get a Quote</Link>
         </div>
       )}
     </header>

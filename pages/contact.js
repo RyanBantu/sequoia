@@ -18,17 +18,24 @@ export default function Contact() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
     })
-      .then((res) => {
-        setForm({ name: "", email: "", message: "" });
+      .then(async (res) => {
+        const data = await res.json().catch(() => ({}));
+        const success = res.ok && data.success;
+        if (success) setForm({ name: "", email: "", message: "" });
         setStatus({
           submitted: true,
           submitting: false,
-          error: res.status !== 200,
-          msg: res.status === 200 ? "Thank you. We will respond shortly." : "Something went wrong. Please try again.",
+          error: !success,
+          msg: data.message || (success ? "Thank you. We will respond shortly." : "Something went wrong. Please try again."),
         });
       })
       .catch(() => {
-        setStatus({ submitted: true, submitting: false, error: true, msg: "Failed to send. Please try again." });
+        setStatus({
+          submitted: true,
+          submitting: false,
+          error: true,
+          msg: "Failed to send. Please try again or email ganesh@sequoiaie.com directly.",
+        });
       });
   };
 

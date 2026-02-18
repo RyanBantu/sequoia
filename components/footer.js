@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div className="footer-export__contact">
           <h3>Contact</h3>
-          <p><HiOutlineLocationMarker /> Hyderabad, India</p>
+          <p><HiOutlineLocationMarker /> #305, Dwaraka Apartment, Thakur Mansion Lane, Somajiguda, Hyderabad, India - 500082</p>
           <p><HiOutlinePhone /> <a href="tel:+918367736999">+91 83677 36999</a></p>
           <p><HiOutlineMail /> <a href="mailto:ganesh@sequoiaie.com">ganesh@sequoiaie.com</a></p>
         </div>

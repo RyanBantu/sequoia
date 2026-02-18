@@ -6,8 +6,8 @@ export default function Contact() {
   const [status, setStatus] = useState({ submitted: false, submitting: false, error: false, msg: null });
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    setStatus({ ...status, msg: null });
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setStatus((prev) => ({ ...prev, msg: null }));
   };
 
   const handleSubmit = (e) => {

@@ -42,28 +42,26 @@ const Contact = () => {
 			body: JSON.stringify(newContact),
 		})
 			.then((res) => {
-				setNewContact({
-					name: '',
-					email: '',
-					message: '',
-				});
-				handleResponse(res.status, 'Thanks For Your Interest, Please Allow Time For Our Response');
+				if (res.status === 200) {
+					setNewContact({ name: '', email: '', message: '' });
+				}
+				handleResponse(res.status, res.status === 200 ? 'Thanks For Your Interest, Please Allow Time For Our Response' : 'Something went wrong. Please try again.');
 			})
-			.catch((err) => console.log('Contact ERROR', err));
+			.catch(() => {
+				setStatus({
+					submitted: true,
+					submitting: false,
+					info: { error: true, msg: 'Failed to send. Please try again or email us directly.' },
+				});
+			});
 	};
 
-	const handleResponse = (status, msg) => {
-		if (status === 200) {
-			setStatus({
-				submitted: true,
-				submitting: false,
-				info: { error: false, msg: msg },
-			});
-		} else {
-			setStatus({
-				info: { error: true, msg: msg },
-			});
-		}
+	const handleResponse = (statusCode, msg) => {
+		setStatus({
+			submitted: true,
+			submitting: false,
+			info: { error: statusCode !== 200, msg },
+		});
 	};
 
 	function showHideDiv(id) {
